@@ -5,7 +5,6 @@
 	<title>SAOZ</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href="css/styless.less" rel="stylesheet/less" type="text/css" />
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript" src="js/less.min.js"></script>
 </head>
 <body>
@@ -159,8 +158,8 @@
 		</nav>
 		
 	</header>
-
-	<section class="contact-page sample-page">
+	<div class="clearfix"></div>
+	<section class="ship-page sample-page">
 		<div class="container">
 			<ol class="breadcrumb">
 			  <li><a href="#">Главная</a></li>
@@ -169,7 +168,7 @@
 			</ol>
 			<div class="sample-wrap">
 				<div class="sidebar pull-right">
-					<aside class="sample-aside pull-right">
+					<aside class="sample-aside">
 						<p>О компании</p>
 						<ul>
 							<li><a href="#">Документы</a></li>
@@ -180,22 +179,52 @@
 							<li><a href="#">Конфиденциальность</a></li>
 						</ul>
 					</aside>
+					<aside class="side-contact">
+						<h2>Контакты</h2>
+						<div class="wrap">
+							<a href="#" class="side-map"><span><img src="img/map.jpg" alt=""></span></a>
+							<div class="text-wrap">
+								<p class="tel">+7 (495) 792-54-99</p>
+								<p class="address">ООО «МедКомплекс «А.В.К.»<br>
+								107241, Москва,<br>
+								Щёлковское шоссе, д. 23 А</p>
+								
+								<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
+									(без перерывов, кроме сб. и вс.)<br>					
+									<a href="mailto:">torg@medcomp.ru</a>
+								</p>
+							</div>
+						</div>
+					</aside>
 				</div>
 				<div class="sample-content">
 					<h2>Контакты</h2>
 					<p class="h3">Мы рады приветствовать Вас на сайте интернет магазина светотехники saoz.ru.</p>
-					<div class="map-wrap">
-						<div class="cont-text-box">
-							<p class="tel">+7 (495) 792-54-99</p>
-							<p class="address">ООО «МедКомплекс «А.В.К.» 107241, Москва,<br>
-							Щёлковское шоссе, д. 23 А</p>
-							<br>
-							<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
-								(без перерывов, кроме сб. и вс.)<br>					
-								<a href="mailto:">torg@medcomp.ru</a>
-							</p>
+					<div class="ship-wrap">
+						<div class="row">
+							<div class="col-md-6 area">
+								<p class="head">По Москве</p>
+								<p>Бесплатная доставка товара осуществляется от 20 тыс. рублей и только в пределах МКАД. В остальных случаях доставка товара до адреса - 500 руб., доставка осуществляется в течении 2-х дней после заказа с 10:00 до 17:00 часов.</p>
+							</div>
+							<div class="col-md-6 area">
+								<p class="head">До транспортной компании</p>
+								<p>Бесплатная доставка до транспортных компаний:</p>								
+								<ul>
+									<li>Деловые Линии www.dellin.ru</li>
+									<li>ПЭК www.pecom.ru</li>
+									<li>Байкал-Сервис www.baikalsr.ru</li>
+								</ul>
+							</div>
 						</div>
-						<div id="myMap"></div>
+						<div class="area">
+							<p class="head">Место доставки</p>
+							<p>Доставка осуществляется по адресу, указанному при оформлении заказа. Если необходимо доставить товар по иному адресу, необходимо сообщить адрес менеджеру Службы доставки, который свяжется с вами непосредственно после оформления заказа на сайте.</p>
+						</div>
+						<div class="sample-alert">
+							<p class="head">Внимание!</p>
+							<p>Просим вас помнить, что все технические параметры и потребительские свойства приобретаемого товара вам следует уточнять у нашего менеджера до момента покупки товара. В обязанности работников Службы доставки не входит осуществление консультаций и комментариев относительно потребительских свойств товара. При необходимости инсталляции приобретаемого в нашем магазине товара вам необходимо сообщить об этом нашему менеджеру.При доставке вам заказанного товара проверяйте комплектность доставленного товара, работоспособность товара, соответствие доставленного товара описанию на нашем сайте, также проверьте товар на наличие механических повреждений. При не заявлении вами при получении товара претензий по поводу механических повреждений, в дальнейшем подобные претензии не рассматриваются. В случае вопросов, пожеланий и претензий обращайтесь к нам по следующим координатам: 
+							<br><a href="mailto:info@saoz.ru">Email: info@saoz.ru<a></p>
+						</div>
 					</div>
 				</div>
 				
@@ -318,22 +347,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-	var cont_map = function init () {
-		// Создаем карту.
-		var myMap = new ymaps.Map("myMap", {
-			center: [55.77637043552061,37.653452891570986],
-			zoom: 15,
-			controls: ["smallMapDefaultSet"]
-			
-		});
-		myMap.behaviors.disable('scrollZoom'); 
-	}
-	ymaps.ready(cont_map);
-});
-	
-</script>
 
 </body>
 </html>

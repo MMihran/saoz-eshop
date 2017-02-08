@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>SAOZ</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link href="css/styless.less" rel="stylesheet/less" type="text/css" />
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript" src="js/less.min.js"></script>
 </head>
 <body>
@@ -159,8 +159,8 @@
 		</nav>
 		
 	</header>
-
-	<section class="contact-page sample-page">
+	<div class="clearfix"></div>
+	<section class="ship-page sample-page">
 		<div class="container">
 			<ol class="breadcrumb">
 			  <li><a href="#">Главная</a></li>
@@ -169,7 +169,7 @@
 			</ol>
 			<div class="sample-wrap">
 				<div class="sidebar pull-right">
-					<aside class="sample-aside pull-right">
+					<aside class="sample-aside">
 						<p>О компании</p>
 						<ul>
 							<li><a href="#">Документы</a></li>
@@ -180,22 +180,63 @@
 							<li><a href="#">Конфиденциальность</a></li>
 						</ul>
 					</aside>
+					<aside class="side-contact">
+						<h2>Контакты</h2>
+						<div class="wrap">
+							<a href="#" class="side-map"><span><img src="img/map.jpg" alt=""></span></a>
+							<div class="text-wrap">
+								<p class="tel">+7 (495) 792-54-99</p>
+								<p class="address">ООО «МедКомплекс «А.В.К.»<br>
+								107241, Москва,<br>
+								Щёлковское шоссе, д. 23 А</p>
+								
+								<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
+									(без перерывов, кроме сб. и вс.)<br>					
+									<a href="mailto:">torg@medcomp.ru</a>
+								</p>
+							</div>
+						</div>
+					</aside>
 				</div>
 				<div class="sample-content">
 					<h2>Контакты</h2>
 					<p class="h3">Мы рады приветствовать Вас на сайте интернет магазина светотехники saoz.ru.</p>
-					<div class="map-wrap">
-						<div class="cont-text-box">
-							<p class="tel">+7 (495) 792-54-99</p>
-							<p class="address">ООО «МедКомплекс «А.В.К.» 107241, Москва,<br>
-							Щёлковское шоссе, д. 23 А</p>
-							<br>
-							<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
-								(без перерывов, кроме сб. и вс.)<br>					
-								<a href="mailto:">torg@medcomp.ru</a>
-							</p>
+					<div class="about-wrap">
+						<ul>
+							<li>реальные и конкурентоспособные цены;</li>
+							<li>скидки торгующим организациям и оптовым компаниям;</li>
+							<li>широкий ассортимент товаров;</li>
+							<li>качественные описания и изображения товаров;</li>
+							<li>поиск товаров в магазине;</li>
+							<li>система обратной связи;</li>
+							<li>продажа только сертифицированных и имеющих легальное происхождение товаров;</li>
+							<li>гарантийное обслуживание купленных у нас товаров;</li>
+							<li>покупка товара, не выходя из дома или офиса;</li>
+							<li>быстрое согласование товара с клиентом для подтверждения заказа;</li>
+							<li>обмен товаров ненадлежащего качества и многое другое.</li>
+						</ul>
+						<p>Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания, касающиеся работы нашего Интернет-магазина - пишите нам, и мы с благодарностью примем ваше мнение во внимание:
+						<br>Email: <a href="mailto:">info@saoz.ru</a></p>
+					</div>
+					<div class="slider-wrap">
+						<div class="slider">
+							<div class="slide"><img src="img/slide-sample.jpg"></div>
+							<div class="slide"><img src="img/slide-sample.jpg"></div>
+							<div class="slide"><img src="img/slide-sample.jpg"></div>
+							<div class="slide"><img src="img/slide-sample.jpg"></div>
+							<div class="slide"><img src="img/slide-sample.jpg"></div>
 						</div>
-						<div id="myMap"></div>
+						<div class="controls">
+							<button id="sample-prev"><b></b></button>
+							<button id="sample-next"><b></b></button>
+							<span>Офис в москве</span>
+						</div>
+					</div>
+
+					<div>
+						<p class="head">Кто приходит в торговый центр</p>
+						<p>В проекте центрального ядра комплекса «Москва-Сити» был изначально заложен торгово&#8209;развлекательный комплекс. Его строительство началось в 2006 году и завершилось пять лет спустя.</p>
+						<p>Ежедневно торговый центр посещают 75 тысяч человек, больше половины которых приезжают сюда на метро. «Афимолл» выступает еще и связующим звеном между метро и башнями: выходы из станций «Выставочная» и «Деловой центр» находятся на его нижних этажах, и работники могут попасть из метро в офис, не проходя по улице.ся.</p>
 					</div>
 				</div>
 				
@@ -316,23 +357,24 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
 <script type="text/javascript">
-$(document).ready(function(){
-	var cont_map = function init () {
-		// Создаем карту.
-		var myMap = new ymaps.Map("myMap", {
-			center: [55.77637043552061,37.653452891570986],
-			zoom: 15,
-			controls: ["smallMapDefaultSet"]
-			
+	$(document).ready(function(){
+		var smpSlider = $(".sample-content .slider").slick({
+			arrows: false,
+			dots:false,
+			speed: 1000
 		});
-		myMap.behaviors.disable('scrollZoom'); 
-	}
-	ymaps.ready(cont_map);
-});
-	
+		$('#sample-prev').click(function(e){
+		e.preventDefault();		
+        	smpSlider.slick("slickPrev"); 
+	    });
+	    $('#sample-next').click(function(e){
+			e.preventDefault();
+	        smpSlider.slick("slickNext"); 
+	    });
+	});
 </script>
 
 </body>

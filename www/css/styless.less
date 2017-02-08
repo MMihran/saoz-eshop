@@ -323,6 +323,7 @@ ol.breadcrumb{
 		span{
 			display: inline-block;
 			overflow: hidden;
+			transition: box-shadow 0.7s;
 		}
 		img{
 			transition: transform 1s;
@@ -336,6 +337,9 @@ ol.breadcrumb{
 		}
 		&:hover img{
 			.transform(scale(1.05));
+		}
+		&:hover span{
+			.box-shadow(0.2);
 		}
 	}
 	.text-wrap{
@@ -755,23 +759,107 @@ footer{
 	height: 480px;
 }
 .sample-page{
+	font-size: 16px;
 	.sample-wrap{
 		background-color: #fff;
 		padding: 75px 45px 75px 120px;
+		overflow: hidden;
 	}
 	.sample-content{
-		width: @content-lg-width;
+		width: 890px;;
 		.h3{
 			font-size: 30px;
 			font-family: @font-family-light;
+		}
+		.row:after{
+			clear: left;
+		}
+		p.head{
+			font-size: 24px;
+			font-family: @font-family-bolder;
+		}
+		p, ul{
+			font-family: @font-family-light;
+			line-height: 1.5;
+		}
+		ul li{
+			padding-left: 10px;
+			position: relative;
+			&:before{
+				content: "•";
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+		}
+		.area{
+			margin-bottom: 50px;
+		}
+		.sample-alert{
+			font-size: 13px;
+			padding: 40px 48px;
+			border: 12px solid #f2f2f2;
+			p.head{
+				font-size: 24px;
+				font-family: @font-family-light;
+				color: @prime-color-bg;
+				margin-bottom: 25px;
+			}
+			a{
+				color: @prime-color-bg;
+			}
+		}
+		.slider-wrap{
+			margin: 40px 0;
+			position: relative;
+			.controls{
+				position: absolute;
+				top: 0;
+				left: 0;
+				text-align: center;
+				span{
+					display: block;
+					color: #898989;
+					margin-top: 10px;
+				}
+				button{
+					width: 55px;
+					height: 55px;
+					border-radius: 27px;
+					border: 3px solid #e5e5e5;
+					background-color: transparent;
+					&+button{
+						margin-left: 5px;
+					}
+					b{
+						display: inline-block;
+						width: 18px;
+						height: 12px;
+						background-image: url("@{images}/slider-controls.png");
+						background-repeat: no-repeat;
+					}
+				}
+			}
+		}
+		.slider{
+			max-width: 620px;
+			margin-left: 170px;
+			&:after{
+				clear: both;
+			}
 		}
 	}
 	.map-wrap{
 		margin-top: 70px;
 		position: relative;
-		width: 895px;
 	}
 	.cont-text-box{
+		p{
+			font-family: @font-family;
+		}
 		position: absolute;
 		z-index: 2;
 		top: 80px;
@@ -784,11 +872,18 @@ footer{
 			margin-top: 0;
 		}
 	}
-	.sample-aside{
+	.ship-wrap{
+		margin-top: 30px;
+	}
+	.sidebar{
 		width: 305px;
+	}
+	.sample-aside{
+		display: block;
 		padding: 60px 70px;
 		background-color: @prime-color-bg;
 		color: @text-white;
+		margin-bottom: 50px;
 		p{
 			font-size: 18px;
 			font-family: @font-family-bold;
@@ -809,8 +904,19 @@ footer{
 			}
 		}
 	}
+	.about-wrap{
+		margin-top: 25px;
+		ul{
+			margin-bottom: 30px;
+		}
+	}
 }
-
+#sample-next b{
+	background-position: right;
+}
+#sample-prev b{
+	background-position: left;
+}
 
 
 
