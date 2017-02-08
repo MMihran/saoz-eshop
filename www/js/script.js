@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+
 /*DROPDOWN MENU*/
 $(".head-3 .container").mouseenter(function(){
 	$(".h3-dropdown-menu").slideDown(150);
@@ -32,7 +35,6 @@ $(".head-3 li a").click(function(e){
 
 /*Range*/
 if ($("#range_start").attr("id")) {
-console.log($("#range_start"));
 var $range = $("#example_id"),
     $input_from = $("#range_start"),
     $input_to = $("#range_end"),
@@ -101,4 +103,47 @@ $input_to.on("change keyup", function () {
 $(".show-more button").click(function(){
     $(this).hide();
     $(".cat-content .load-wrap").addClass("visible");
+});
+
+
+
+
+/*disable select input*/
+$('#select-beast-selectized').prop('disabled', true);
+
+
+
+
+// Plus/Minus
+
+$('.count-minus').click(function(e) {
+   e.preventDefault();
+   $( this ).next().val(function(i, oldval) {
+      if (oldval > 1)
+         return --oldval;
+         return 1;
+   });
+});
+
+$('.count-plus').click(function(e) {
+   e.preventDefault();
+   $( this ).prev().val(function(i, oldval) {
+      if (oldval < 999)
+         return ++oldval;
+      return 999;
+   });
+});
+/*del*/
+$('.order-item .del').click(function(e) {
+   e.preventDefault();
+   var hidden = $( this ).parent().parent();
+   hidden.hide('slow', function(){
+        hidden.detach();
+   });
+});
+
+var orderHeight = $(".order-left").height();
+$(".order-right").css("min-height", orderHeight + "px");
+
+
 });

@@ -98,7 +98,9 @@
 
 
 
-
+/*======
+	MIXINS
+======*/
 
 .box-shadow(@opacity, @blur: 40px, @x: 0px, @y: 0px, @spread: 0px){
 	-webkit-box-shadow: @x @y @blur @spread rgba(0,0,0,@opacity);
@@ -305,6 +307,12 @@ ol.breadcrumb{
 	font-size: 12px;
 	color: #898989;
 }
+
+
+/*======
+	HEADER
+======*/
+
 
 header{
 	font-size: @header-fz;
@@ -579,6 +587,12 @@ header{
 		});
 }
 
+
+
+/*======
+	FOOTER
+======*/
+
 footer{
 	background-color: @footer-bg;
 	color: @footer-color;
@@ -674,7 +688,9 @@ footer{
 
 
 
-//======INDEX=========
+/*======
+	INDEX
+=========*/
 
 .index-cont{
 	margin-top: -85px;
@@ -1178,6 +1194,14 @@ footer{
 	}
 }
 
+
+
+
+/*======
+	NEWS
+======*/
+
+
 .news{
 	margin: 70px 0 50px;
 	.news-item{
@@ -1256,7 +1280,7 @@ footer{
 	}
 }
 
-
+/*CATALOG*/
 .cat-content{
 	float: left;
 	width: @content-lg-width;
@@ -1649,6 +1673,9 @@ footer{
 }
 
 
+/*======
+	CART
+======*/
 
 .cart-cont{
 	h2{
@@ -1897,6 +1924,277 @@ footer{
 					margin-left: 40px;
 				}
 			});
+		}
+	}
+}
+
+
+/*======
+	ORDER
+======*/
+.order{
+	margin-bottom: -10px;
+	.form-top{
+		font-size: 14px;
+		>label{
+			cursor: pointer;
+			input{
+				display: none;
+			}
+			span{
+				display: inline-block;
+				width: 23px;
+				height: 23px;
+				background-color: #fff;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 25px;
+				margin-right: 5px;
+				b{
+					display: inline-block;
+					width: 11px;
+					height: 11px;
+					border-radius: 50%;
+				}
+			}
+			input:checked + span{
+				b{
+					background-color: @prime-color-bg;					
+				}
+			}
+		}
+		>label+label{
+			margin-left: 15px;
+		}
+		.orderer-type{
+			width: 665px;
+			margin: 35px 0;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #dfdfdf;
+			label{
+				margin-bottom: 15px;
+				span{
+					display: inline-block;
+					width: 185px;
+					color: fade(@text-color, 50%);
+				}
+				input{
+					width: 480px;
+					height: 50px;
+					border: none;
+					padding: 0 27px;
+					font-family: @font-family-light;
+				}
+			}
+		}
+	}
+	.form-bot{
+		font-size: 16px;
+		h2{
+			margin-bottom: 40px;
+		}
+		span{
+			font-size: 14px;
+			color: fade(@text-color, 50%);
+			display: inline-block;
+			width: 185px;
+			height: 100%;
+			vertical-align: top;
+			line-height: 50px;
+		}
+		.selectize-control{
+			display: inline-block;
+		}
+		.selectize-input{
+			width: 480px;
+			height: 50px;
+			border: none;
+			font-size: 16px;
+			line-height: 50px;
+			padding: 0 27px;
+			box-shadow: none;
+			border-radius: 0;
+			span{
+				float: right;
+				color: @prime-color-bg;
+				font-family: @font-family-bold;
+				font-size: 16px;
+				width: auto;
+				margin-right: 15px;
+			}
+		}
+		.selectize-dropdown{
+			border: none;
+			.option{
+				padding: 5px 27px;
+			}
+		}
+		.payment-method{
+			margin-top: 15px;
+			.radio-wrap{
+				width: 490px;
+				display: inline-block;
+				margin-left: -10px;
+			}
+			label{
+				width: 235px;
+				float: left;
+				height: 100px;
+				line-height: 100px;
+				background-color: #fff;
+				vertical-align: top;
+				position: relative;
+				cursor: pointer;
+				margin: 0 0 10px 10px;
+				text-align: center;
+				input{
+					display: none;
+				}
+				b{
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					font-family: @font-family-bold;
+					font-weight: normal;
+					color: @prime-color-bg;
+					line-height: 1.2;
+				}
+				span{
+					display: inline-block;
+					line-height: 1.2;
+					width: 175px;
+					text-align: left;
+					padding-left: 55px;
+					height: auto;
+					min-height: 60px;
+					background-repeat: no-repeat;
+					background-position: left top;
+					vertical-align: baseline;
+				}
+				&.payment-1 span{
+					background-image: url("@{images}/order-radio1.png");
+					background-position: 5px 0;
+				}
+				&.payment-2 span{
+					background-image: url("@{images}/order-radio2.png");
+				}
+				&.payment-3 span{
+					background-image: url("@{images}/order-radio3.png");
+				}
+				&.payment-4 span{
+					background-image: url("@{images}/order-radio4.png");
+					background-position: 10px 0;
+				}
+				&.payment-5 span{
+					background-image: url("@{images}/order-radio5.png");
+				}
+			}
+		}
+		.comment{
+			margin-bottom: 20px;
+			textarea{
+				width: 480px;
+				height: 100px;
+				border: none;
+				background-color: #fff;
+				padding: 12px 27px;
+				font-size: 16px;
+				font-family: @font-family-light;
+			}
+		}
+		.submit{
+			padding-left: 185px;
+			button{
+				.button-btn();
+				width: 288px;
+				height: 65px;
+				text-align: left;
+				padding: 0 32px;
+				border-radius: 32px;
+			}
+		}
+	}
+	.order-right{
+		padding: 50px 70px 40px 80px;
+		background-color: #fff;
+		h2{
+			margin-bottom: 30px;
+		}
+		.sum{
+			font-size: 24px;
+			margin-top: 45px;
+			span:last-child{
+				font-family: @font-family-light;
+				margin-left: 75px;
+			}
+		}
+		.items-wrap{
+			border-bottom: 1px solid #e8e8e8;
+		}
+		.order-item{
+			position: relative;
+			overflow: hidden;
+			padding: 25px 0;
+			border-top: 1px solid #e8e8e8;
+			>img{
+				float: left;
+				margin-right: 40px;
+			}
+		}
+		.text-wrap{
+			width: 200px;
+			float: left;
+			margin-right: 60px;
+			padding-top: 5px;
+		}
+		.about-prod{
+			font-size: 13px;
+			color: #898989;
+			margin-top: 10px;
+		}
+		.price{
+			.prod-price();
+			margin: 0 0 10px;
+			font-size: 24px;
+			display: block;
+		}
+		a.head{
+			.prod-head-style();
+		}
+		input{
+			.prime-btn(115px, 55px);
+			font-size: 24px;
+			color: #000;
+			text-align: center;
+			position: relative;
+		}
+		.item-right{
+			text-align: center;
+			display: inline-block;
+			padding-top: 5px;
+		}
+		.quant{
+			display: inline-block;
+			position: relative;
+			span{
+				display: inline-block;
+				cursor: pointer;
+				position: absolute;
+				top: 20px;
+				z-index: 2;
+				color: fade(@text-color, 50%);
+				&:first-child{
+					right: 15px;
+				}
+				&:last-child{
+					left: 15px;
+				}
+			}
+		}
+		.del{
+			position: absolute;
+			top: 30px;
+			right: 0;
 		}
 	}
 }
