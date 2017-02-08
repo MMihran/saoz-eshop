@@ -94,6 +94,12 @@
 
 
 
+.md(@rules) {
+  @media (max-width: 1500px) { 
+  	@rules();
+  }
+}
+
 
 
 
@@ -123,7 +129,7 @@
 	border-bottom: 1px solid fade(@prime-color, 50%);
 	.md({
 		font-size: 13px;
-		})
+	});
 }
 .prime-btn(@width, @height){
 	display: inline-block;
@@ -237,12 +243,6 @@
 
 
 
-
-.md(@rules) {
-  @media (max-width: 1500px) { 
-  	@rules();
-  }
-}
 
 body{
 	font-family: @font-family;
