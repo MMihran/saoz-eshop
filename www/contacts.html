@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>SAOZ</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/selectize.css">
 	<link href="css/styless.less" rel="stylesheet/less" type="text/css" />
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript" src="js/less.min.js"></script>
 </head>
 <body>
@@ -160,155 +160,43 @@
 		
 	</header>
 
-	<div class="clearfix"></div>
-
-	<section class="order">
+	<section class="contact-page sample-page">
 		<div class="container">
 			<ol class="breadcrumb">
 			  <li><a href="#">Главная</a></li>
 			  <li><a href="#">Каталог</a></li>
 			  <li class="active">Светильники и прожекторы</li>
 			</ol>
-			<div class="row">
-				<form class="col-md-6 order-left">
-					<div class="form-top">
-						<h2>Оформить заказ</h2>
-						<label>
-							<input type="radio" name="order-radio" checked="checked">
-							<span><b></b></span>Физическое лицо
-						</label>
-						<label>
-							<input type="radio" name="order-radio">
-							<span><b></b></span>Юридическое лицо
-						</label>
-						<div class="orderer-type">
-							<label><span>Ваше имя</span><input type="text" name="" placeholder="Сергей"></label>
-							<label><span>Ваш Адрес</span><input type="text" name="" placeholder="г. Москва, ул. Пушкина, д 12\а кв. 354"></label>
-							<label><span>Эл. Почта</span><input type="mail" name="" placeholder="sergey@mail.ru"></label>
+			<div class="sample-wrap">
+				<aside class="sample-aside pull-right">
+					<p>О компании</p>
+					<ul>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#" class="active">Контакты</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Производители</a></li>
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Конфиденциальность</a></li>
+					</ul>
+				</aside>
+				<div class="sample-content">
+					<h2>Контакты</h2>
+					<p class="h3">Мы рады приветствовать Вас на сайте интернет магазина светотехники saoz.ru.</p>
+					<div class="map-wrap">
+						<div class="cont-text-box">
+							<p class="tel">+7 (495) 792-54-99</p>
+							<p class="address">ООО «МедКомплекс «А.В.К.» 107241, Москва,<br>
+							Щёлковское шоссе, д. 23 А</p>
+							<br>
+							<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
+								(без перерывов, кроме сб. и вс.)<br>					
+								<a href="mailto:">torg@medcomp.ru</a>
+							</p>
 						</div>
+						<div id="myMap"></div>
 					</div>
-					<div class="form-bot">
-						<h2>Оплата и доставка</h2>
-						<div class="control-group">
-							<span>Метод доставки</span>
-							<select id="select-beast" class="demo-default" placeholder="">
-								<p><option value="700">Курьерская доставка</option></p>
-								<p><option value="0">Самовывоз </option></p>
-								<p><option value="300">Почта России</option></p>
-							</select>
-						</div>
-						<div class="payment-method">
-							<span>Метод оплаты</span>
-							<div class="radio-wrap">
-								<label class="payment-1">
-									<input type="radio" name="payment-type">
-									<b>0%</b>
-									<span>Сбербанк онлайн</span>
-								</label>
-								<label class="payment-2">
-									<input type="radio" name="payment-type">
-									<b>2.4%</b>
-									<span>Электронные деньги</span>
-								</label>
-								<label class="payment-3">
-									<input type="radio" name="payment-type">
-									<b>2.4%</b>
-									<span>VISA</span>
-								</label>
-								<label class="payment-4">
-									<input type="radio" name="payment-type">
-									<b>0%</b>
-									<span>MasterCard</span>
-								</label>
-								<label class="payment-5">
-									<input type="radio" name="payment-type">
-									<b>0%</b>
-									<span>Наличные курьеру</span>
-								</label>
-							</div>
-						</div>
-						<div class="comment">
-							<span>Комментарии</span>
-							<textarea placeholder="Перед приездом позвоните!  893010000121"></textarea>
-						</div>
-						<div class="submit">
-							<button>Оформить заказ</button>
-						</div>
-					</div>
-				</form>
-				<div class="col-md-6 order-right">
-					<h2>Ваш заказ</h2>
-					<div class="items-wrap">
-						<div class="order-item">
-							<img src="img/order-pic1.jpg">
-							<div class="text-wrap">
-								<a href="#" class="head">Лампа бактерицидная T8 UVC 30W G13</a>
-								<p class="about-prod">Прожектор FAEL LUCE  Sky Cannon 1000 Поставляется в комплекте с ПРА</p>
-							</div>
-							<div class="item-right">
-								<span class="price">205 руб.</span>
-								<div class="quant">
-									<span class="glyphicon glyphicon-menu-down count-minus"></span>
-									<input type="text" name="" value="1" readonly="readonly">
-									<span class="glyphicon glyphicon-menu-up count-plus"></span>
-								</div>
-								<a href="#" class="del"><img src="img/order-del.png" alt=""></a>
-							</div>
-						</div>
-						<div class="order-item">
-							<img src="img/order-pic2.jpg">
-							<div class="text-wrap">
-								<a href="#" class="head">Лампа бактерицидная T8 UVC 30W G13</a>
-								<p class="about-prod">Прожектор FAEL LUCE  Sky Cannon 1000 Поставляется в комплекте с ПРА</p>
-							</div>
-							<div class="item-right">
-								<span class="price">1 205 руб.</span>
-								<div class="quant">
-									<span class="glyphicon glyphicon-menu-down count-minus"></span>
-									<input type="text" name="" value="1" readonly="readonly">
-									<span class="glyphicon glyphicon-menu-up count-plus"></span>
-								</div>
-								<a href="#" class="del"><img src="img/order-del.png" alt=""></a>
-							</div>
-						</div>
-						<div class="order-item">
-							<img src="img/order-pic1.jpg">
-							<div class="text-wrap">
-								<a href="#" class="head">Лампа бактерицидная T8 UVC 30W G13</a>
-								<p class="about-prod">Прожектор FAEL LUCE  Sky Cannon 1000 Поставляется в комплекте с ПРА</p>
-							</div>
-							<div class="item-right">
-								<span class="price">205 руб.</span>
-								<div class="quant">
-									<span class="glyphicon glyphicon-menu-down count-minus"></span>
-									<input type="text" name="" value="1" readonly="readonly">
-									<span class="glyphicon glyphicon-menu-up count-plus"></span>
-								</div>
-								<a href="#" class="del"><img src="img/order-del.png" alt=""></a>
-							</div>
-						</div>
-						<div class="order-item">
-							<img src="img/order-pic2.jpg">
-							<div class="text-wrap">
-								<a href="#" class="head">Лампа бактерицидная T8 UVC 30W G13</a>
-								<p class="about-prod">Прожектор FAEL LUCE  Sky Cannon 1000 Поставляется в комплекте с ПРА</p>
-							</div>
-							<div class="item-right">
-								<span class="price">1 205 руб.</span>
-								<div class="quant">
-									<span class="glyphicon glyphicon-menu-down count-minus"></span>
-									<input type="text" name="" value="1" readonly="readonly">
-									<span class="glyphicon glyphicon-menu-up count-plus"></span>
-								</div>
-								<a href="#" class="del"><img src="img/order-del.png" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<p class="sum">
-						<span>Итого:</span>
-						<span>12 560 руб.</span>
-					</p>
 				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -353,6 +241,8 @@
 			</div>
 		</div>
 	</section>
+
+
 
 	<footer>
 		<div class="container">
@@ -424,18 +314,23 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/selectize.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
 <script type="text/javascript">
-	$('#select-beast').selectize({
-		valueField: "ddd",
-		onChange: function () {
-			var price = $(".selectize-input .item").attr("data-value");
-			$(".selectize-input").append("<span>" + price + " руб.</span>");
-		}
-	});
-	var price = $(".selectize-input .item").attr("data-value");
-	$(".selectize-input").append("<span>" + price + " руб.</span>")
+$(document).ready(function(){
+	var cont_map = function init () {
+		// Создаем карту.
+		var myMap = new ymaps.Map("myMap", {
+			center: [55.77637043552061,37.653452891570986],
+			zoom: 15,
+			controls: ["smallMapDefaultSet"]
+			
+		});
+		myMap.behaviors.disable('scrollZoom'); 
+	}
+	ymaps.ready(cont_map);
+});
+	
 </script>
 
 </body>
