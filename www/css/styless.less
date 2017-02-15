@@ -292,6 +292,12 @@ ol.breadcrumb{
 	a{
 		color: rgba(0, 0, 0, 0.5);
 	}
+	&:before{
+		content: "";
+		display: block;
+		clear: both;
+		overflow: hidden;
+	}
 }
 .breadcrumb>li+li:before{
 	content: "";
@@ -764,6 +770,9 @@ footer{
 		background-color: #fff;
 		padding: 75px 45px 75px 120px;
 		overflow: hidden;
+	}
+	.breadcrumb:before{
+		padding-top: 10px;
 	}
 	.sample-content{
 		width: 890px;;
