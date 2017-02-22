@@ -146,4 +146,51 @@ var orderHeight = $(".order-left").height();
 $(".order-right").css("min-height", orderHeight + "px");
 
 
+
+
+function splitTo( arr, n) {
+  var plen = n;
+
+  return arr.reduce( function( p, c, i, a) {
+    if(i%plen === 0) p.push([]);
+    p[p.length-1][i] = c;
+    return p;
+  }, []);
+}
+function eqHeight(colsInRow){
+  var cols = $(".catalog .cat-products .prod-description");
+  var colsArr = [];
+  var colHeight = [];
+  cols.each(function(){
+    colsArr.push($(this));
+    colHeight.push($(this).height());
+  })
+  var result = splitTo( colsArr, colsInRow);
+  var heightArr = splitTo(colHeight, colsInRow);
+  for (var i = 0; i < result.length; i++) {
+    var compactArray = result[i].filter(function (item) {
+      return item !== undefined;
+    });
+    var compactHeight = heightArr[i].filter(function (item) {
+      return item !== undefined;
+    });
+    for (var j = 0; j < compactArray.length; j++) {
+      compactArray[j].height(Math.max.apply(null, compactHeight));
+
+    }
+  }
+};
+
+eqHeight(4);
+$(window).resize(function(){
+if (window.matchMedia('(max-width: 980px)').matches)
+{
+  eqHeight(12);
+}
+})
 });
+
+
+
+
+
