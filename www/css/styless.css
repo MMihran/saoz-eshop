@@ -51,6 +51,14 @@
 /*sidebar vars*/
 /*index-var*/
 /*MD-media vars*/
+@media (max-width: 1200px) {
+  .navbar {
+    margin-bottom: 0;
+  }
+  .head-1 .navbar-collapse.collapse {
+    margin: 0;
+  }
+}
 /*======
 	MIXINS
 ======*/
@@ -150,7 +158,7 @@ body {
 }
 @media (max-width: 1500px) {
   .tel {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 p {
@@ -285,7 +293,7 @@ header {
 }
 @media (max-width: 1500px) {
   header {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 header a:hover {
@@ -296,6 +304,11 @@ header .head-1 {
 }
 header .head-1 .nav:first-child li + li a {
   margin-left: 20px;
+}
+@media (max-width: 1200px) {
+  header .head-1 .nav:first-child li + li a {
+    margin-left: 10px;
+  }
 }
 @media (max-width: 1500px) {
   header .head-1 .nav:first-child li a {
@@ -334,6 +347,11 @@ header .head-2 .navbar-header {
   height: 45px;
   margin: 13px 6% 13px 0;
 }
+@media (max-width: 1200px) {
+  header .head-2 .navbar-header {
+    margin-right: 2.5%;
+  }
+}
 header .head-2 .navbar-brand {
   padding: 0;
   float: none;
@@ -345,6 +363,14 @@ header .head-2 .navbar-form {
   padding: 0;
   position: relative;
   width: 32.8%;
+}
+@media (max-width: 1200px) {
+  header .head-2 .navbar-form {
+    width: 23.5%;
+  }
+  header .head-2 .navbar-form input {
+    font-size: 12px;
+  }
 }
 header .head-2 .form-group {
   width: 100%;
@@ -374,16 +400,16 @@ header .head-2 .navbar-right {
   margin-right: 0;
 }
 header .head-2 .navbar-right li {
-  padding-left: 46px;
-  height: 50px;
+  padding: 10px 0 10px 46px;
+  height: 70px;
   background: left center no-repeat;
   line-height: 0.8;
-  margin: 10px 0;
 }
 @media (max-width: 1500px) {
   header .head-2 .navbar-right li {
     padding-left: 37px;
-    height: 40px;
+    height: 60px;
+    padding: 15px 0 15px 52px;
   }
 }
 header .head-2 span {
@@ -391,13 +417,15 @@ header .head-2 span {
   float: right;
   display: inline-block;
   line-height: normal;
+  line-height: 20px;
 }
 header .head-2 .navbar-right li:first-child {
   background-image: url("../img/header-3.png");
 }
 @media (max-width: 1500px) {
   header .head-2 .navbar-right li:first-child {
-    background-size: 24px;
+    background-size: 29px;
+    background-position: 5px bottom;
   }
 }
 header .head-2 .navbar-right li:last-child {
@@ -410,9 +438,9 @@ header .head-2 .navbar-right li:last-child p {
 }
 @media (max-width: 1500px) {
   header .head-2 .navbar-right li:last-child {
-    background-size: 32px;
-    font-size: 15px;
-    margin-left: 20px;
+    background-size: 39px;
+    font-size: 14px;
+    margin-left: 45px;
   }
   header .head-2 .navbar-right li:last-child p {
     margin-bottom: 10px;
@@ -427,7 +455,7 @@ header .head-2 .navbar-right a:hover {
   color: #0e7afb;
 }
 header .head-2 .price {
-  font-size: 18px;
+  font-size: 16px;
   color: #0e7afb;
   font-family: "GothamProMedium";
 }
@@ -895,6 +923,11 @@ footer .footer-widget a:hover {
 .index-cont .sidebar {
   width: 21%;
 }
+@media (max-width: 1200px) {
+  .index-cont .sidebar {
+    width: 28.4%;
+  }
+}
 .index-cont .side-contact {
   font-size: 13px;
   float: left;
@@ -1049,6 +1082,11 @@ footer .footer-widget a:hover {
   width: 79%;
   float: left;
   position: relative;
+}
+@media (max-width: 1200px) {
+  .index-cont .slider {
+    width: 71.6%;
+  }
 }
 .index-cont .slider .slick-slide img {
   width: 100%;
@@ -1830,7 +1868,7 @@ footer .footer-widget a:hover {
   width: 25%;
   float: left;
   background-color: #fff;
-  height: 405px;
+  padding-bottom: 25px;
   border-style: solid;
   border-color: #e5e5e5;
   border-width: 0 1px 1px 0;
@@ -1856,7 +1894,9 @@ footer .footer-widget a:hover {
   padding: 0 35px;
 }
 .cat-products .prod .prod-description {
-  height: 135px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 .cat-products .prod .about-prod {
   font-size: 13px;
@@ -1869,8 +1909,6 @@ footer .footer-widget a:hover {
   -moz-box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, 0.75);
   z-index: 2;
-  border: none;
-  padding-right: 1px;
 }
 .cat-products .prod:hover img {
   -webkit-transform-origin: center center;
@@ -1912,7 +1950,7 @@ footer .footer-widget a:hover {
   margin-right: 7px;
   margin-top: 20px;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 .cat-products a.head {
   font-family: "GothamProMedium";
