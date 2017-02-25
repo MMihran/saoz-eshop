@@ -381,6 +381,12 @@ ol.breadcrumb{
 		display: none;
 	});
 }
+.sm({
+	.cart-cont .breadcrumb{
+		margin-top: 24px;
+	}
+});
+	
 .breadcrumb>li+li:before{
 	content: "";
 	display: inline-block;
@@ -868,6 +874,8 @@ header{
 			.navbar-right{
 				margin: 10px 0;
 				width: 100%;
+				position: relative;
+				z-index: 2;
 				li{
 					font-size: 9px;
 					float: left;
@@ -916,7 +924,7 @@ header{
 	.menu-wrap{
 		position: relative;
 		opacity: 0;
-		transition: opacity 2s;
+		transition: opacity 1s;
 		background-color: #1f1f1f;
 		height: 100%;
 		text-align: left;
@@ -1039,6 +1047,9 @@ header{
 	.xs({
 		font-size: 12px;
 		.box-shadow(0.15);
+		.menu-wrap{
+			display: none;
+		}
 		.menu-half{
 			float: none;
 			width: 100%;
@@ -2162,6 +2173,7 @@ footer{
 	.xs({
 		.slider{			
 			margin-left: -15px;
+			margin-top: 50px;
 			width: 100%;
 			float: none;
 			.slick-list{
@@ -2455,8 +2467,6 @@ footer{
 	.md({
 		.show-more{
 			height: 130px;
-			margin-left: -15px;
-			margin-right: -15px;
 			.load-wrap, button{
 				height: 50px;
 			}
@@ -2669,7 +2679,8 @@ footer{
 	});
 	.xs({
 		.sidebar{
-			width: 280px;
+			max-width: 280px;
+			width: auto;
 			.watched{
 				margin: 10px -15px 25px;
 				h2{
@@ -2853,6 +2864,8 @@ footer{
 }
 .filter-open{
 	font-size: 15px;
+	max-width: 720px;
+	margin: 0 auto;
 	color: #000;
 	display: block;
 	padding: 10px 0;
@@ -2869,6 +2882,9 @@ footer{
 	&.collapsed{
 		.box-shadow(0.15);
 	}
+	&:focus, &:hover{
+		color: #000;
+	}
 	.xs({
 		max-width: 280px;
 		margin: 0 auto;
@@ -2881,9 +2897,6 @@ footer{
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		span{
 			float: right;
-		}
-		&:focus, &:hover{
-			color: #000;
 		}
 	});
 }
@@ -3107,7 +3120,6 @@ footer{
 		padding: 50px 60px 30px;
 		.item-right-wrap{
 			width: 500px;
-			position: relative;
 		}
 		.item-name{
 			font-size: 30px;
@@ -3286,6 +3298,161 @@ footer{
 			});
 		}
 	}
+	.sm({
+		.item-right{
+			.item-about{
+				font-size: 12px;
+			}
+			.quant{
+				position: static;
+				margin-bottom: 10px;
+			}
+			.item-name{
+				margin-bottom: 15px;
+			}
+		}
+		.item-bot{
+			padding: 20px 28px 35px;
+			.nav-tabs{
+				li a{
+					font-size: 13.5px;
+					padding: 6px 15px;
+				}
+			}
+			.spec{
+				width: 400px;
+			}
+		}
+	});
+	.tb({
+		.item-right{
+			.quant{
+				position: absolute;
+			}
+		}
+		.item-bot{
+			.spec{
+				display: block;
+				float: none;
+				margin: 0 auto 15px;
+				+ .spec{
+					margin-left: auto;
+				}
+			}
+		}
+	});
+	.xs({
+		margin-top: 44px;
+		margin-bottom: 20px;
+		.container{
+			padding: 0;
+		}
+		.cat-products{
+			margin: 0;
+			.prod{
+				width: 210px;
+			}
+		}
+		.cart-item{
+			.img-wrap{
+				border-right: 0;
+				min-height: 267px;
+				.img-bot{
+					span{
+						font-size: 8px;
+						width: 65px;
+					}
+					b{
+						font-size: 35px;
+					}
+				}
+				.img-top{
+					img{
+						max-width: 85px;
+					}
+					a{
+						font-size: 11px;
+						margin-left: 20px;
+						padding-left: 30px;
+						background-size: 25px;
+					}
+				}
+			}
+		}
+		.item-right{
+			padding: 25px 15px;
+			margin-right: -15px;
+			.selectize-input{
+				height: 40px;
+				font-size: 14px;
+				line-height: 40px;
+				width: 110px;
+			}
+			input[type="number"]{
+				width: 40px;
+				height: 40px;
+				font-size: 14px;
+			}
+			.item-right-wrap{
+				width: auto;
+			}
+			.quant{
+				position: static;
+				font-size: 10px;
+			}
+			.item-name{
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
+			.tiny{
+				font-size: 10px;
+			}
+			form label{
+				margin-right: 5px;
+			}
+			.price{
+				margin-left: 5px;
+				margin-top: 18px;
+				.new{
+					font-size: 22px;
+				}
+			}
+			.item-about{
+				padding-right: 15px;
+				font-size: 10px;
+			}
+			.button-btn{
+				height: 25px;
+				line-height: 25px;
+				padding: 0 5px;
+				font-size: 13.5px;
+				&.dark-btn{
+					width: 140px;
+				}
+			}
+		}
+		.item-bot{
+			padding: 18px;
+			.nav-tabs{
+				li a{
+					font-size: 9.5px;
+					padding: 3px 5px;
+				}
+				li+li{
+					margin-left: 0;
+				}
+			}
+			.spec{
+				width: 100%;
+				margin-bottom: 0;
+				font-size: 11px;
+				li span{
+					padding-top: 6px;
+					padding-bottom: 1px;
+				}
+			}
+		}
+	});
 }
 
 
