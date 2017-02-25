@@ -7,9 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css">
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.skinHTML5.css">
 	<link rel="stylesheet" type="text/css" href="css/selectize.css">
-	<link rel="stylesheet" href="css/styless.css" type="text/css" />
-	<!-- <link href="css/styless.less" rel="stylesheet/less" type="text/css" />
-	<script type="text/javascript" src="js/less.min.js"></script> -->
+	<!-- <link rel="stylesheet" href="css/styless.css" type="text/css" /> -->
+	<link href="css/styless.less" rel="stylesheet/less" type="text/css" />
+	<script type="text/javascript" src="js/less.min.js"></script>
 </head>
 <body>
 	<header>
@@ -73,16 +73,18 @@
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		      
+		        <b class="visible-xs head-3-current">Каталог товаров</b>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 		      <ul class="nav navbar-nav">
 		        <li><a href="#" data-target="1">Лампы <span>12</span></a></li>
 		        <li><a href="#" data-target="2">Светильники и прожекторы <span>55</span></a></li>
@@ -95,63 +97,95 @@
 
 			<div class="h3-dropdown-menu" style="display: none;">
 				<div class="menu-wrap" data-dest="1">
+					
 					<div class="menu-half">
-						<a href="#">Металлогалогенные</a>
-						<a href="#">Инфракрасные</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-1" aria-expanded="false" aria-controls="collapseMenuHalf-1">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-1" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные</a>
+							<a href="#">Инфракрасные</a>
+						</div>
 					</div>
+					
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-2" aria-expanded="false" aria-controls="collapseMenuHalf-2">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-2" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap" data-dest="2">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные2</a>
-						<a href="#">Инфракрасные2</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-3" aria-expanded="false" aria-controls="collapseMenuHalf-3">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-3" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные2</a>
+							<a href="#">Инфракрасные2</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-4" aria-expanded="false" aria-controls="collapseMenuHalf-4">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-4" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="3">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные3</a>
-						<a href="#">Инфракрасные3</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-5" aria-expanded="false" aria-controls="collapseMenuHalf-5">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-5" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные3</a>
+							<a href="#">Инфракрасные3</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-6" aria-expanded="false" aria-controls="collapseMenuHalf-6">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-6" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="4">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные4</a>
-						<a href="#">Инфракрасные4</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-7" aria-expanded="false" aria-controls="collapseMenuHalf-7">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-7" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные4</a>
+							<a href="#">Инфракрасные4</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-8" aria-expanded="false" aria-controls="collapseMenuHalf-8">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-8" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="5">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные5</a>
-						<a href="#">Инфракрасные5</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-9" aria-expanded="false" aria-controls="collapseMenuHalf-9">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-9" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные5</a>
+							<a href="#">Инфракрасные5</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-10" aria-expanded="false" aria-controls="collapseMenuHalf-10">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-10" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -166,196 +200,139 @@
 	
 	<div class="clearfix"></div>
 	<section class="index-cont catalog">
+   		<a class="filter-open visible-sm visible-xs" role="button" data-toggle="collapse" href="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">Развернуть фильтр<span class="glyphicon glyphicon-menu-down"></span></a>
 		<div class="container">
-			
+			<aside id="collapseFilter" class="side filter-wrap pull-right panel-collapse collapse in" role="tabpanel">
+				  <div class="filter">
+				  	<div class="panel panel-default">
+				  	  <div class="panel-heading" role="tab" id="headingOne">
+				  	    <h4 class="panel-title">
+				  	      <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Цена</a>
+				  	    </h4>
+				  	  </div>
+				  	  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				  	    <div class="panel-body">
+				  	      <p class="range-input"><span>от<input type="text" id="range_start"></span><span>до<input type="text" id="range_end"></span></p>
+						  <input type="text" id="example_id" name="example_name" value="" />
+				  	    </div>
+				  	  </div>
+				  	</div>
+				  	<div class="panel panel-default">
+				  	  <div class="panel-heading" role="tab" id="headingTwo">
+				  	    <h4 class="panel-title">
+				  	      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Бренд</a>
+				  	    </h4>
+				  	  </div>
+				  	  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				  	    <div class="panel-body">					  
+							<label>
+								<input type="checkbox" name="">
+								<span class=""></span>Электическая
+							</label>
+							<label>
+								<input type="checkbox" name="">
+								<span></span>Механическая
+							</label>
+							<label>
+								<input type="checkbox" name="">
+								<span></span>С кардиомонитором
+							</label>
+							<label>
+								<input type="checkbox" name="">
+								<span></span>Складная
+							</label>
+							<label>
+								<input type="checkbox" name="">
+								<span></span>Для дома
+							</label>
+				  	    </div>
+				  	  </div>
+				  	</div>
+				  	<div class="panel panel-default">
+				  	  <div class="panel-heading" role="tab" id="headingThree">
+				  	    <h4 class="panel-title">
+				  	      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Мощность, Вт</a>
+				  	    </h4>
+				  	  </div>
+				  	  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				  	    <div class="panel-body">
+					  	    <label>
+								<input type="radio" name="radio2">
+								<span></span>Дещевый
+							</label>
+							<label>
+								<input type="radio" name="radio2">
+								<span></span>Обычный
+							</label>
+							<label>
+								<input type="radio" name="radio2">
+								<span></span>Дорогой
+							</label>
+				  	    </div>
+				  	  </div>
+				  	</div>
+				  	<div class="panel panel-default">
+				  	  <div class="panel-heading" role="tab" id="headingFour">
+				  	    <h4 class="panel-title">
+				  	      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Напряжение, В</a>
+				  	    </h4>
+				  	  </div>
+				  	  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				  	    <div class="panel-body">
+				  	        
+							<label>
+								<input type="checkbox" name="s3_1">
+								<span></span>Электическая
+							</label>
+							<label>
+								<input type="checkbox" name="nameExample">
+								<span></span>Механическая
+							</label>
+							<label>
+								<input type="checkbox" name="nameExample">
+								<span></span>С кардиомонитором
+							</label>
+							<label>
+								<input type="checkbox" name="nameExample">
+								<span></span>Складная
+							</label>
+							<label>
+								<input type="checkbox" name="nameExample">
+								<span></span>Для дома
+							</label>
+				  	    </div>
+				  	  </div>
+				  	</div>
+				  	<div class="panel panel-default">
+				  	  <div class="panel-heading" role="tab" id="headingFive">
+				  	    <h4 class="panel-title">
+				  	      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Цоколь</a>
+				  	    </h4>
+				  	  </div>
+				  	  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+				  	    <div class="panel-body">					  
+							<label>
+								<input type="radio" name="radio">
+								<span></span>Дещевый
+							</label>
+							<label>
+								<input type="radio" name="radio">
+								<span></span>Обычный
+							</label>
+							<label>
+								<input type="radio" name="radio">
+								<span></span>Дорогой
+							</label>
+				  	    </div>
+				  	  </div>
+				  	</div>
+				  </div>
+				<div class="download">
+					<a href="#">Скачать <br>прайс лист</a>
+					<span>актуален на 12 сен 2016</span>
+				</div>
+			</aside>
 
-			<div class="sidebar pull-right">
-				<aside class="side">
-					  <div class="filter">
-					  	<div class="panel panel-default">
-					  	  <div class="panel-heading" role="tab" id="headingOne">
-					  	    <h4 class="panel-title">
-					  	      <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Цена</a>
-					  	    </h4>
-					  	  </div>
-					  	  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-					  	    <div class="panel-body">
-					  	      <p class="range-input"><span>от<input type="text" id="range_start"></span><span>до<input type="text" id="range_end"></span></p>
-							  <input type="text" id="example_id" name="example_name" value="" />
-					  	    </div>
-					  	  </div>
-					  	</div>
-					  	<div class="panel panel-default">
-					  	  <div class="panel-heading" role="tab" id="headingTwo">
-					  	    <h4 class="panel-title">
-					  	      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Бренд</a>
-					  	    </h4>
-					  	  </div>
-					  	  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-					  	    <div class="panel-body">					  
-								<label>
-									<input type="checkbox" name="">
-									<span class=""></span>Электическая
-								</label>
-								<label>
-									<input type="checkbox" name="">
-									<span></span>Механическая
-								</label>
-								<label>
-									<input type="checkbox" name="">
-									<span></span>С кардиомонитором
-								</label>
-								<label>
-									<input type="checkbox" name="">
-									<span></span>Складная
-								</label>
-								<label>
-									<input type="checkbox" name="">
-									<span></span>Для дома
-								</label>
-					  	    </div>
-					  	  </div>
-					  	</div>
-					  	<div class="panel panel-default">
-					  	  <div class="panel-heading" role="tab" id="headingThree">
-					  	    <h4 class="panel-title">
-					  	      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Мощность, Вт</a>
-					  	    </h4>
-					  	  </div>
-					  	  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-					  	    <div class="panel-body">
-						  	    <label>
-									<input type="radio" name="radio2">
-									<span></span>Дещевый
-								</label>
-								<label>
-									<input type="radio" name="radio2">
-									<span></span>Обычный
-								</label>
-								<label>
-									<input type="radio" name="radio2">
-									<span></span>Дорогой
-								</label>
-					  	    </div>
-					  	  </div>
-					  	</div>
-					  	<div class="panel panel-default">
-					  	  <div class="panel-heading" role="tab" id="headingFour">
-					  	    <h4 class="panel-title">
-					  	      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Напряжение, В</a>
-					  	    </h4>
-					  	  </div>
-					  	  <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-					  	    <div class="panel-body">
-					  	        
-								<label>
-									<input type="checkbox" name="s3_1">
-									<span></span>Электическая
-								</label>
-								<label>
-									<input type="checkbox" name="nameExample">
-									<span></span>Механическая
-								</label>
-								<label>
-									<input type="checkbox" name="nameExample">
-									<span></span>С кардиомонитором
-								</label>
-								<label>
-									<input type="checkbox" name="nameExample">
-									<span></span>Складная
-								</label>
-								<label>
-									<input type="checkbox" name="nameExample">
-									<span></span>Для дома
-								</label>
-					  	    </div>
-					  	  </div>
-					  	</div>
-					  	<div class="panel panel-default">
-					  	  <div class="panel-heading" role="tab" id="headingFive">
-					  	    <h4 class="panel-title">
-					  	      <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Цоколь</a>
-					  	    </h4>
-					  	  </div>
-					  	  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-					  	    <div class="panel-body">					  
-								<label>
-									<input type="radio" name="radio">
-									<span></span>Дещевый
-								</label>
-								<label>
-									<input type="radio" name="radio">
-									<span></span>Обычный
-								</label>
-								<label>
-									<input type="radio" name="radio">
-									<span></span>Дорогой
-								</label>
-					  	    </div>
-					  	  </div>
-					  	</div>
-					  </div>
-					<div class="download">
-						<a href="#">Скачать <br>прайс лист</a>
-						<span>актуален на 12 сен 2016</span>
-					</div>
-				</aside>
-				<div class="clearfix"></div>
-				<aside class="watched">
-					<h2>Вы смотрели</h2>
-					<ul>
-						<li><a href="#">
-							<span>Лампа бактерицидная T8 UVC 30W G13 </span>
-							<b>205 руб.</b>
-							<img src="img/new-item-pic.png" alt="">
-						</a></li>
-						<li><a href="#">
-							<span>Лампа бактерицидная LightTech LTC 15 T8 G13 </span>
-							<b>560 руб.</b>
-							<img src="img/new-item-pic.png" alt="">
-						</a></li>
-						<li><a href="#">
-							<span>kristall ltd gps1148t6l 120w - лампа </span>
-							<b>556 руб.</b>
-							<img src="img/new-item-pic.png" alt="">
-						</a></li>
-						<li><a href="#">
-							<span>Кварцевая колба для лампы Kristall Ltd GPS 1148 T6L 120W </span>
-							<b>1 205 руб.</b>
-							<img src="img/new-item-pic.png" alt="">
-						</a></li>
-						<li><a href="#">
-							<span>Лампа бактерицидная T8 UVC 30W G13 </span>
-							<b>205 руб.</b>
-							<img src="img/new-item-pic.png" alt="">
-						</a></li>
-						<li><a href="#">
-							<span>Лампа бактерицидная LightTech LTC 15 T8 G13 </span>
-							<b>560 руб.</b>
-							<img src="img/new-item-pic.png" alt="">
-						</a></li>
-					</ul>
-
-				</aside>
-
-				<aside class="side-contact">
-					<h2>Контакты</h2>
-					<div class="wrap">
-						<a href="#" class="side-map"><span><img src="img/map.jpg" alt=""></span></a>
-						<div class="text-wrap">
-							<p class="tel">+7 (495) 792-54-99</p>
-							<p class="address">ООО «МедКомплекс «А.В.К.»<br>
-							107241, Москва,<br>
-							Щёлковское шоссе, д. 23 А</p>
-							
-							<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
-								(без перерывов, кроме сб. и вс.)<br>					
-								<a href="mailto:">torg@medcomp.ru</a>
-							</p>
-						</div>
-					</div>
-				</aside>
-			</div>
 
 			<section class="cat-content">
 				<ol class="breadcrumb">
@@ -365,6 +342,8 @@
 				</ol>
 				<div class="catalog-head">
 					<h2>Металлогалогенные</h2>
+					<p class="hidden-xs">Металлогалогенные лампы - это осветительные приборы, использующиеся для создания внутреннего или наружного освещения. В зависимости от назначения различают различные типы ламп, которые оснащены цоколем разного размера. </p>
+					<p class="visible-xs">Мы рады приветствовать Вас на сайте интернет магазина светотехники saoz.ru.</p>
 					<span>Сортировать</span>
 					<div class="control-group">
 						<select id="select-beast" class="demo-default" placeholder="">
@@ -373,7 +352,6 @@
 							<option value="1">по мощности</option>
 						</select>
 					</div>
-					<p>Металлогалогенные лампы - это осветительные приборы, использующиеся для создания внутреннего или наружного освещения. В зависимости от назначения различают различные типы ламп, которые оснащены цоколем разного размера. </p>
 				</div>
 				<div class="clearfix"></div>
 				<div class="cat-products">
@@ -544,6 +522,65 @@
 				</div>
 			</section>
 
+			<div class="clearfix visible-sm visible-xs"></div>
+			
+			<div class="sidebar pull-right">
+				<aside class="watched">
+					<h2>Вы смотрели</h2>
+					<ul>
+						<li><a href="#">
+							<span>Лампа бактерицидная T8 UVC 30W G13 </span>
+							<b>205 руб.</b>
+							<img src="img/new-item-pic.png" alt="">
+						</a></li>
+						<li><a href="#">
+							<span>Лампа бактерицидная LightTech LTC 15 T8 G13 </span>
+							<b>560 руб.</b>
+							<img src="img/new-item-pic.png" alt="">
+						</a></li>
+						<li><a href="#">
+							<span>kristall ltd gps1148t6l 120w - лампа </span>
+							<b>556 руб.</b>
+							<img src="img/new-item-pic.png" alt="">
+						</a></li>
+						<li><a href="#">
+							<span>Кварцевая колба для лампы Kristall Ltd GPS 1148 T6L 120W </span>
+							<b>1 205 руб.</b>
+							<img src="img/new-item-pic.png" alt="">
+						</a></li>
+						<li><a href="#">
+							<span>Лампа бактерицидная T8 UVC 30W G13 </span>
+							<b>205 руб.</b>
+							<img src="img/new-item-pic.png" alt="">
+						</a></li>
+						<li><a href="#">
+							<span>Лампа бактерицидная LightTech LTC 15 T8 G13 </span>
+							<b>560 руб.</b>
+							<img src="img/new-item-pic.png" alt="">
+						</a></li>
+					</ul>
+
+				</aside>
+
+				<aside class="side-contact">
+					<h2>Контакты</h2>
+					<div class="wrap">
+						<a href="#" class="side-map"><span><img src="img/map.jpg" alt=""></span></a>
+						<div class="text-wrap">
+							<p class="tel">+7 (495) 792-54-99</p>
+							<p class="address">ООО «МедКомплекс «А.В.К.»<br>
+							107241, Москва,<br>
+							Щёлковское шоссе, д. 23 А</p>
+							
+							<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
+								(без перерывов, кроме сб. и вс.)<br>					
+								<a href="mailto:">torg@medcomp.ru</a>
+							</p>
+						</div>
+					</div>
+				</aside>
+			</div>
+
 			<div class="clearfix"></div>
 
 			
@@ -581,7 +618,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="news-item">
+			<div class="news-item hidden-tablet">
 				<div class="wrap">
 					<a href="#">Точечные светильники со светодиодной подсветкой</a>
 					<div class="date">
@@ -611,10 +648,6 @@
 					<a href="mailto:info@electropara.ru">info@electropara.ru</a>
 					<span>© 2010-2016 «Электропа­ра»</span>
 				</div>
-			</div>
-			<div class="footer-text">
-				<p class="head">Все электротовары в одном магазине</p>
-				<p>Интернет-магазин по продаже электрики Электропара предлагает покупателям широкий ассортимент электротехнической продукции. В продаже всегда большой выбор электротоваров – лампы, светильник­и, автоматические выключатели, розетки, различные виды кабеля и провода.  У нас вы можете купить    необходимое оборудование для создания освещения, включая требуемые комплектую­щие. Наш девиз – вся электрика в одном магазине.  К сожалению, далеко не во всех магазинах Москвы представлен такой огромный выбор электрики. У нас вы можете купить практическ­и все для электромонтажа. Мы регулярно проводим акции и распродажи­, предоставл­яем гибкую систему скидок для оптовиков. Гарантии качества, профессиональное отношение и безупречна­я репутация – приоритеты­, которые мы ценим больше всего. Удачных покупок! </p>
 			</div>
 			<div class="footer-right">
 				<div class="footer-widget">
@@ -656,6 +689,10 @@
 						<li><a href="#">Оформление претензий</a></li>
 					</ul>
 				</div>
+			</div>
+			<div class="footer-text">
+				<p class="head">Все электротовары в одном магазине</p>
+				<p>Интернет-магазин по продаже электрики Электропара предлагает покупателям широкий ассортимент электротехнической продукции. В продаже всегда большой выбор электротоваров – лампы, светильник­и, автоматические выключатели, розетки, различные виды кабеля и провода.  У нас вы можете купить    необходимое оборудование для создания освещения, включая требуемые комплектую­щие. Наш девиз – вся электрика в одном магазине.  К сожалению, далеко не во всех магазинах Москвы представлен такой огромный выбор электрики. У нас вы можете купить практическ­и все для электромонтажа. Мы регулярно проводим акции и распродажи­, предоставл­яем гибкую систему скидок для оптовиков. Гарантии качества, профессиональное отношение и безупречна­я репутация – приоритеты­, которые мы ценим больше всего. Удачных покупок! </p>
 			</div>
 		</div>
 	</footer>
