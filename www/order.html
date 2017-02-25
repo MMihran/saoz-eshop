@@ -5,9 +5,9 @@
 	<title>SAOZ</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/selectize.css">
-	<link rel="stylesheet" href="css/styless.css" type="text/css" />
-	<!-- <link href="css/styless.less" rel="stylesheet/less" type="text/css" />
-	<script type="text/javascript" src="js/less.min.js"></script> -->
+	<!-- <link rel="stylesheet" href="css/styless.css" type="text/css" /> -->
+	<link href="css/styless.less" rel="stylesheet/less" type="text/css" />
+	<script type="text/javascript" src="js/less.min.js"></script>
 </head>
 <body>
 	<header>
@@ -71,16 +71,18 @@
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		      
+		        <b class="visible-xs head-3-current">Каталог товаров</b>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 		      <ul class="nav navbar-nav">
 		        <li><a href="#" data-target="1">Лампы <span>12</span></a></li>
 		        <li><a href="#" data-target="2">Светильники и прожекторы <span>55</span></a></li>
@@ -93,63 +95,95 @@
 
 			<div class="h3-dropdown-menu" style="display: none;">
 				<div class="menu-wrap" data-dest="1">
+					
 					<div class="menu-half">
-						<a href="#">Металлогалогенные</a>
-						<a href="#">Инфракрасные</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-1" aria-expanded="false" aria-controls="collapseMenuHalf-1">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-1" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные</a>
+							<a href="#">Инфракрасные</a>
+						</div>
 					</div>
+					
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-2" aria-expanded="false" aria-controls="collapseMenuHalf-2">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-2" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap" data-dest="2">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные2</a>
-						<a href="#">Инфракрасные2</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-3" aria-expanded="false" aria-controls="collapseMenuHalf-3">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-3" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные2</a>
+							<a href="#">Инфракрасные2</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-4" aria-expanded="false" aria-controls="collapseMenuHalf-4">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-4" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="3">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные3</a>
-						<a href="#">Инфракрасные3</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-5" aria-expanded="false" aria-controls="collapseMenuHalf-5">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-5" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные3</a>
+							<a href="#">Инфракрасные3</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-6" aria-expanded="false" aria-controls="collapseMenuHalf-6">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-6" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="4">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные4</a>
-						<a href="#">Инфракрасные4</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-7" aria-expanded="false" aria-controls="collapseMenuHalf-7">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-7" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные4</a>
+							<a href="#">Инфракрасные4</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-8" aria-expanded="false" aria-controls="collapseMenuHalf-8">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-8" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="5">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные5</a>
-						<a href="#">Инфракрасные5</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-9" aria-expanded="false" aria-controls="collapseMenuHalf-9">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-9" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные5</a>
+							<a href="#">Инфракрасные5</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-10" aria-expanded="false" aria-controls="collapseMenuHalf-10">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-10" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -171,73 +205,7 @@
 			  <li class="active">Светильники и прожекторы</li>
 			</ol>
 			<div class="row">
-				<form class="col-md-6 order-left">
-					<div class="form-top">
-						<h2>Оформить заказ</h2>
-						<label>
-							<input type="radio" name="order-radio" checked="checked">
-							<span><b></b></span>Физическое лицо
-						</label>
-						<label>
-							<input type="radio" name="order-radio">
-							<span><b></b></span>Юридическое лицо
-						</label>
-						<div class="orderer-type">
-							<label><span>Ваше имя</span><input type="text" name="" placeholder="Сергей"></label>
-							<label><span>Ваш Адрес</span><input type="text" name="" placeholder="г. Москва, ул. Пушкина, д 12\а кв. 354"></label>
-							<label><span>Эл. Почта</span><input type="mail" name="" placeholder="sergey@mail.ru"></label>
-						</div>
-					</div>
-					<div class="form-bot">
-						<h2>Оплата и доставка</h2>
-						<div class="control-group">
-							<span>Метод доставки</span>
-							<select id="select-beast" class="demo-default" placeholder="">
-								<p><option value="700">Курьерская доставка</option></p>
-								<p><option value="0">Самовывоз </option></p>
-								<p><option value="300">Почта России</option></p>
-							</select>
-						</div>
-						<div class="payment-method">
-							<span>Метод оплаты</span>
-							<div class="radio-wrap">
-								<label class="payment-1">
-									<input type="radio" name="payment-type">
-									<b>0%</b>
-									<span>Сбербанк онлайн</span>
-								</label>
-								<label class="payment-2">
-									<input type="radio" name="payment-type">
-									<b>2.4%</b>
-									<span>Электронные деньги</span>
-								</label>
-								<label class="payment-3">
-									<input type="radio" name="payment-type">
-									<b>2.4%</b>
-									<span>VISA</span>
-								</label>
-								<label class="payment-4">
-									<input type="radio" name="payment-type">
-									<b>0%</b>
-									<span>MasterCard</span>
-								</label>
-								<label class="payment-5">
-									<input type="radio" name="payment-type">
-									<b>0%</b>
-									<span>Наличные курьеру</span>
-								</label>
-							</div>
-						</div>
-						<div class="comment">
-							<span>Комментарии</span>
-							<textarea placeholder="Перед приездом позвоните!  893010000121"></textarea>
-						</div>
-						<div class="submit">
-							<button>Оформить заказ</button>
-						</div>
-					</div>
-				</form>
-				<div class="col-md-6 order-right">
+				<div class="col-lg-6 order-right pull-right">
 					<h2>Ваш заказ</h2>
 					<div class="items-wrap">
 						<div class="order-item">
@@ -310,6 +278,73 @@
 						<span>12 560 руб.</span>
 					</p>
 				</div>
+				<form class="col-lg-6 order-left">
+					<div class="form-top">
+						<h2>Оформить заказ</h2>
+						<label>
+							<input type="radio" name="order-radio" checked="checked">
+							<span><b></b></span>Физическое лицо
+						</label>
+						<label>
+							<input type="radio" name="order-radio">
+							<span><b></b></span>Юридическое лицо
+						</label>
+						<div class="orderer-type">
+							<label><span>Ваше имя</span><input type="text" name="" placeholder="Сергей"></label>
+							<label><span>Ваш Адрес</span><input type="text" name="" placeholder="г. Москва, ул. Пушкина, д 12\а кв. 354"></label>
+							<label><span>Эл. Почта</span><input type="mail" name="" placeholder="sergey@mail.ru"></label>
+						</div>
+					</div>
+					<div class="form-bot">
+						<h2>Оплата и доставка</h2>
+						<div class="control-group">
+							<span>Метод доставки</span>
+							<select id="select-beast" class="demo-default" placeholder="">
+								<p><option value="700">Курьерская доставка</option></p>
+								<p><option value="0">Самовывоз </option></p>
+								<p><option value="300">Почта России</option></p>
+							</select>
+						</div>
+						<div class="payment-method">
+							<span>Метод оплаты</span>
+							<div class="radio-wrap">
+								<label class="payment-1">
+									<input type="radio" name="payment-type">
+									<b>0%</b>
+									<span>Сбербанк онлайн</span>
+								</label>
+								<label class="payment-2">
+									<input type="radio" name="payment-type">
+									<b>2.4%</b>
+									<span>Электронные деньги</span>
+								</label>
+								<label class="payment-3">
+									<input type="radio" name="payment-type">
+									<b>2.4%</b>
+									<span>VISA</span>
+								</label>
+								<label class="payment-4">
+									<input type="radio" name="payment-type">
+									<b>0%</b>
+									<span>MasterCard</span>
+								</label>
+								<label class="payment-5">
+									<input type="radio" name="payment-type">
+									<b>0%</b>
+									<span>Наличные курьеру</span>
+								</label>
+							</div>
+						</div>
+						<div class="comment">
+							<span>Комментарии</span>
+							<textarea placeholder="Перед приездом позвоните!  893010000121"></textarea>
+						</div>
+						<div class="submit">
+							<button>Оформить заказ</button>
+						</div>
+					</div>
+				</form>
+				
 			</div>
 		</div>
 	</section>
@@ -343,7 +378,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="news-item">
+			<div class="news-item hidden-tablet">
 				<div class="wrap">
 					<a href="#">Точечные светильники со светодиодной подсветкой</a>
 					<div class="date">

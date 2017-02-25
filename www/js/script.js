@@ -114,8 +114,7 @@ $('.order-item .del').click(function(e) {
    });
 });
 
-var orderHeight = $(".order-left").height();
-$(".order-right").css("min-height", orderHeight + "px");
+
 
 
 
@@ -198,6 +197,8 @@ if (window.matchMedia('(max-width: 1200px) and (min-width: 768px)').matches){
 }
 if (window.matchMedia('(min-width: 1200px)').matches){
   eqHeight(4);
+  var orderHeight = $(".order-left").height();
+  $(".order-right").css("min-height", orderHeight + "px");
 }
 if (window.matchMedia('(max-width: 768px)').matches){
   eqHeight(1);
