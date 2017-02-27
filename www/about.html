@@ -5,9 +5,9 @@
 	<title>SAOZ</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" href="css/styless.css" type="text/css" />
-	<!-- <link href="css/styless.less" rel="stylesheet/less" type="text/css" /> -->
-	<!-- <script type="text/javascript" src="js/less.min.js"></script> -->
+	<!-- <link rel="stylesheet" href="css/styless.css" type="text/css" /> -->
+	<link href="css/styless.less" rel="stylesheet/less" type="text/css" />
+	<script type="text/javascript" src="js/less.min.js"></script>
 </head>
 <body>
 	<header>
@@ -71,16 +71,18 @@
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		      
+		        <b class="visible-xs head-3-current">Каталог товаров</b>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 		      <ul class="nav navbar-nav">
 		        <li><a href="#" data-target="1">Лампы <span>12</span></a></li>
 		        <li><a href="#" data-target="2">Светильники и прожекторы <span>55</span></a></li>
@@ -93,63 +95,95 @@
 
 			<div class="h3-dropdown-menu" style="display: none;">
 				<div class="menu-wrap" data-dest="1">
+					
 					<div class="menu-half">
-						<a href="#">Металлогалогенные</a>
-						<a href="#">Инфракрасные</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-1" aria-expanded="false" aria-controls="collapseMenuHalf-1">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-1" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные</a>
+							<a href="#">Инфракрасные</a>
+						</div>
 					</div>
+					
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-2" aria-expanded="false" aria-controls="collapseMenuHalf-2">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-2" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap" data-dest="2">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные2</a>
-						<a href="#">Инфракрасные2</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-3" aria-expanded="false" aria-controls="collapseMenuHalf-3">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-3" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные2</a>
+							<a href="#">Инфракрасные2</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-4" aria-expanded="false" aria-controls="collapseMenuHalf-4">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-4" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="3">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные3</a>
-						<a href="#">Инфракрасные3</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-5" aria-expanded="false" aria-controls="collapseMenuHalf-5">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-5" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные3</a>
+							<a href="#">Инфракрасные3</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-6" aria-expanded="false" aria-controls="collapseMenuHalf-6">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-6" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="4">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные4</a>
-						<a href="#">Инфракрасные4</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-7" aria-expanded="false" aria-controls="collapseMenuHalf-7">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-7" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные4</a>
+							<a href="#">Инфракрасные4</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-8" aria-expanded="false" aria-controls="collapseMenuHalf-8">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-8" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="menu-wrap"  data-dest="5">
 					<div class="menu-half">
-						<a href="#">Металлогалогенные5</a>
-						<a href="#">Инфракрасные5</a>
+						<button class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-9" aria-expanded="false" aria-controls="collapseMenuHalf-9">Все типы<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-9" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#">Металлогалогенные5</a>
+							<a href="#">Инфракрасные5</a>
+						</div>
 					</div>
 					<div class="menu-half menu-brand">
-						<a href="#"><img src="img/brand-1.png" alt=""></a>
-						<a href="#"><img src="img/brand-3.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
-						<a href="#"><img src="img/brand-2.png" alt=""></a>
+						<button  class="visible-xs" role="button" data-toggle="collapse" href="#collapseMenuHalf-10" aria-expanded="false" aria-controls="collapseMenuHalf-10">Все бренды<span class="glyphicon glyphicon-menu-down pull-right"></span></button>
+						<div id="collapseMenuHalf-10" class="panel-collapse collapse in" role="tabpanel">
+							<a href="#"><img src="img/brand-1.png" alt=""></a>
+							<a href="#"><img src="img/brand-3.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+							<a href="#"><img src="img/brand-2.png" alt=""></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -168,79 +202,86 @@
 			  <li><a href="#">Каталог</a></li>
 			  <li class="active">Светильники и прожекторы</li>
 			</ol>
-			<div class="sample-wrap">
-				<div class="sidebar pull-right">
-					<aside class="sample-aside">
-						<p>О компании</p>
-						<ul>
-							<li><a href="#">Документы</a></li>
-							<li><a href="#" class="active">Контакты</a></li>
-							<li><a href="#">О компании</a></li>
-							<li><a href="#">Производители</a></li>
-							<li><a href="#">Сотрудничество</a></li>
-							<li><a href="#">Конфиденциальность</a></li>
-						</ul>
-					</aside>
-					<aside class="side-contact">
-						<h2>Контакты</h2>
-						<div class="wrap">
-							<a href="#" class="side-map"><span><img src="img/map.jpg" alt=""></span></a>
-							<div class="text-wrap">
-								<p class="tel">+7 (495) 792-54-99</p>
-								<p class="address">ООО «МедКомплекс «А.В.К.»<br>
-								107241, Москва,<br>
-								Щёлковское шоссе, д. 23 А</p>
-								
-								<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
-									(без перерывов, кроме сб. и вс.)<br>					
-									<a href="mailto:">torg@medcomp.ru</a>
-								</p>
+		</div>
+		<div class="sm-bg">
+			<div class="container">
+				<div class="sample-wrap">
+					<div class="sidebar pull-right">
+						<aside class="sample-aside">
+							<p>О компании</p>
+							<ul>
+								<li><a href="#">Документы</a></li>
+								<li><a href="#" class="active">Контакты</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Производители</a></li>
+								<li><a href="#">Сотрудничество</a></li>
+								<li><a href="#">Конфиденциальность</a></li>
+							</ul>
+						</aside>
+					</div>
+					<div class="sample-content">
+						<h2>О компании</h2>
+						<p class="h3">Мы рады приветствовать Вас на сайте интернет магазина светотехники saoz.ru.</p>
+						<div class="about-wrap">
+							<ul>
+								<li>реальные и конкурентоспособные цены;</li>
+								<li>скидки торгующим организациям и оптовым компаниям;</li>
+								<li>широкий ассортимент товаров;</li>
+								<li>качественные описания и изображения товаров;</li>
+								<li>поиск товаров в магазине;</li>
+								<li>система обратной связи;</li>
+								<li>продажа только сертифицированных и имеющих легальное происхождение товаров;</li>
+								<li>гарантийное обслуживание купленных у нас товаров;</li>
+								<li>покупка товара, не выходя из дома или офиса;</li>
+								<li>быстрое согласование товара с клиентом для подтверждения заказа;</li>
+								<li>обмен товаров ненадлежащего качества и многое другое.</li>
+							</ul>
+							<p>Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания, касающиеся работы нашего Интернет-магазина - пишите нам, и мы с благодарностью примем ваше мнение во внимание:
+							<br>Email: <a href="mailto:">info@saoz.ru</a></p>
+						</div>
+						<div class="slider-wrap">
+							<div class="slider">
+								<div class="slide"><img src="img/slide-sample.jpg"></div>
+								<div class="slide"><img src="img/slide-sample.jpg"></div>
+								<div class="slide"><img src="img/slide-sample.jpg"></div>
+								<div class="slide"><img src="img/slide-sample.jpg"></div>
+								<div class="slide"><img src="img/slide-sample.jpg"></div>
+							</div>
+							<div class="controls">
+								<button id="sample-prev"><b></b></button>
+								<button id="sample-next"><b></b></button>
+								<span>Офис в москве</span>
 							</div>
 						</div>
-					</aside>
-				</div>
-				<div class="sample-content">
-					<h2>Контакты</h2>
-					<p class="h3">Мы рады приветствовать Вас на сайте интернет магазина светотехники saoz.ru.</p>
-					<div class="about-wrap">
-						<ul>
-							<li>реальные и конкурентоспособные цены;</li>
-							<li>скидки торгующим организациям и оптовым компаниям;</li>
-							<li>широкий ассортимент товаров;</li>
-							<li>качественные описания и изображения товаров;</li>
-							<li>поиск товаров в магазине;</li>
-							<li>система обратной связи;</li>
-							<li>продажа только сертифицированных и имеющих легальное происхождение товаров;</li>
-							<li>гарантийное обслуживание купленных у нас товаров;</li>
-							<li>покупка товара, не выходя из дома или офиса;</li>
-							<li>быстрое согласование товара с клиентом для подтверждения заказа;</li>
-							<li>обмен товаров ненадлежащего качества и многое другое.</li>
-						</ul>
-						<p>Мы всегда рады общению с нашими клиентами. Если у вас есть какие-либо пожелания, предложения, замечания, касающиеся работы нашего Интернет-магазина - пишите нам, и мы с благодарностью примем ваше мнение во внимание:
-						<br>Email: <a href="mailto:">info@saoz.ru</a></p>
-					</div>
-					<div class="slider-wrap">
-						<div class="slider">
-							<div class="slide"><img src="img/slide-sample.jpg"></div>
-							<div class="slide"><img src="img/slide-sample.jpg"></div>
-							<div class="slide"><img src="img/slide-sample.jpg"></div>
-							<div class="slide"><img src="img/slide-sample.jpg"></div>
-							<div class="slide"><img src="img/slide-sample.jpg"></div>
-						</div>
-						<div class="controls">
-							<button id="sample-prev"><b></b></button>
-							<button id="sample-next"><b></b></button>
-							<span>Офис в москве</span>
+			
+						<div>
+							<p class="head">Кто приходит в торговый центр</p>
+							<p>В проекте центрального ядра комплекса «Москва-Сити» был изначально заложен торгово&#8209;развлекательный комплекс. Его строительство началось в 2006 году и завершилось пять лет спустя.</p>
+							<p>Ежедневно торговый центр посещают 75 тысяч человек, больше половины которых приезжают сюда на метро. «Афимолл» выступает еще и связующим звеном между метро и башнями: выходы из станций «Выставочная» и «Деловой центр» находятся на его нижних этажах, и работники могут попасть из метро в офис, не проходя по улице.ся.</p>
 						</div>
 					</div>
-
-					<div>
-						<p class="head">Кто приходит в торговый центр</p>
-						<p>В проекте центрального ядра комплекса «Москва-Сити» был изначально заложен торгово&#8209;развлекательный комплекс. Его строительство началось в 2006 году и завершилось пять лет спустя.</p>
-						<p>Ежедневно торговый центр посещают 75 тысяч человек, больше половины которых приезжают сюда на метро. «Афимолл» выступает еще и связующим звеном между метро и башнями: выходы из станций «Выставочная» и «Деловой центр» находятся на его нижних этажах, и работники могут попасть из метро в офис, не проходя по улице.ся.</p>
+					<div class="sidebar pull-right">
+						
+						<aside class="side-contact">
+							<h2>Контакты</h2>
+							<div class="wrap">
+								<a href="#" class="side-map"><span><img src="img/map.jpg" alt=""></span></a>
+								<div class="text-wrap">
+									<p class="tel">+7 (495) 792-54-99</p>
+									<p class="address">ООО «МедКомплекс «А.В.К.»<br>
+									107241, Москва,<br>
+									Щёлковское шоссе, д. 23 А</p>
+									
+									<p class="w-time">Время работы офиса: c 9.00 до 18.00<br>
+										(без перерывов, кроме сб. и вс.)<br>					
+										<a href="mailto:">torg@medcomp.ru</a>
+									</p>
+								</div>
+							</div>
+						</aside>
 					</div>
+					
 				</div>
-				
 			</div>
 		</div>
 	</section>
@@ -274,7 +315,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="news-item">
+			<div class="news-item hidden-tablet">
 				<div class="wrap">
 					<a href="#">Точечные светильники со светодиодной подсветкой</a>
 					<div class="date">
