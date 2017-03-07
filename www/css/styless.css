@@ -878,6 +878,7 @@ header .head-3 span {
   background-color: #1f1f1f;
   position: relative;
   z-index: 4;
+  float: left;
 }
 .h3-dropdown-menu .menu-wrap {
   position: relative;
